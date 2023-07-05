@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="searchbar" placeholder="type here.. ">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="put your email">
+            <input type="password" class="box" placeholder="put your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" name="" id="remember">
+            <label for="remember">remember me</label>
+            <p><a href="#">Forget password?</a></p>
+            <p><a href="#">Sign Up</a></p>
+        </form>
+    </div>
+
+    <section id="home" class="home">
+        <div class="content">
+            <h3>Adventures Travel</h3>
+            <p>Explore the world with us,</p>
+            <a href="#" class="btn">Explore more</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/adv1.mp4"> </span>
+            <span class="vid-btn" data-src="images/adv2.mp4"> </span>
+            <span class="vid-btn" data-src="images/adv3.mp4"> </span>
+            <span class="vid-btn" data-src="images/adv4.mp4"> </span>
+            <span class="vid-btn" data-src="images/adv5.mp4"> </span>
+        </div>
+        <div class="video-container">
+            <video src="images/adv1.mp4" loop autoplay muted id="video-slider"></video>
+        </div>
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>B</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/img1.jpg" alt="">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <h3>Where to</h3>
+                    <input type="text" placeholder="location">
+                </div>
+                <div class="inputbox">
+                    <h3>members</h3>
+                    <input type="number" placeholder="no of guests">
+                </div>
+                <div class="inputbox">
+                    <h3>Arraival</h3>
+                    <input type="date">
+                </div>
+                <div class="inputbox">
+                    <h3>Leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+            </div>
+        </div>
+    </section>
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/img2.webp" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>India</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, eos?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$130.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Paris</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, eos?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$130.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Malaysia</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, eos?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$130.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img5.jfif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Dubai</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, eos?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$130.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>China</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, eos?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$130.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img7.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Nepal</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, eos?</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$130.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+         <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Price worthy hotels</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod facilis necessitatibus veritatis amet dolore, ea explicabo saepe qui? Porro possimus ut nesciunt suscipit nulla.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food and drinks</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod facilis necessitatibus veritatis amet dolore, ea explicabo saepe qui? Porro possimus ut nesciunt suscipit nulla.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Tour guide</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod facilis necessitatibus veritatis amet dolore, ea explicabo saepe qui? Porro possimus ut nesciunt suscipit nulla.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Aound the place</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod facilis necessitatibus veritatis amet dolore, ea explicabo saepe qui? Porro possimus ut nesciunt suscipit nulla.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Quick travel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod facilis necessitatibus veritatis amet dolore, ea explicabo saepe qui? Porro possimus ut nesciunt suscipit nulla.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Treking</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod facilis necessitatibus veritatis amet dolore, ea explicabo saepe qui? Porro possimus ut nesciunt suscipit nulla.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/img-g1.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g2.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g3.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g4.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g5.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g6.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g7.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g8.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-g9.jfif" alt="">
+                <div class="content">
+                    <h3>Adventures views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio ratione voluptate maiores ipsa odit quae neque magni sed rem?</p>
+                    <a href="" class="btn">see more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class=" swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/img-r1.jpg" alt="">
+                        <h3>Dhanush</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut soluta vero error fugit tempora vel id, fuga amet laborum? Facilis ipsam numquam dicta earum, magnam blanditiis vitae debitis molestiae?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/img-r1.jpg" alt="">
+                        <h3>Dhanush</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut soluta vero error fugit tempora vel id, fuga amet laborum? Facilis ipsam numquam dicta earum, magnam blanditiis vitae debitis molestiae?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/img-r2.jpg" alt="">
+                        <h3>Ajith</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut soluta vero error fugit tempora vel id, fuga amet laborum? Facilis ipsam numquam dicta earum, magnam blanditiis vitae debitis molestiae?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/img-r3.jpg" alt="">
+                        <h3>Vijay</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut soluta vero error fugit tempora vel id, fuga amet laborum? Facilis ipsam numquam dicta earum, magnam blanditiis vitae debitis molestiae?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/img-r4.jfif" alt="">
+                        <h3>Surya</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut soluta vero error fugit tempora vel id, fuga amet laborum? Facilis ipsam numquam dicta earum, magnam blanditiis vitae debitis molestiae?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/img-r5.jpg" alt="">
+                        <h3>Shiva</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut soluta vero error fugit tempora vel id, fuga amet laborum? Facilis ipsam numquam dicta earum, magnam blanditiis vitae debitis molestiae?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/img-r6.jfif" alt="">
+                        <h3>Karthhi</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut soluta vero error fugit tempora vel id, fuga amet laborum? Facilis ipsam numquam dicta earum, magnam blanditiis vitae debitis molestiae?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                 <img src="images/img-c.png" alt="">
+            </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea  placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </div>
+    </section>
+
+    <section class="brand-container" id="brand">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/img-b1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/img-b2.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/img-b3.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/img-b4.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/img-b5.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/img-b6.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ad autem aut adipisci! Vitae expedita tenetur culpa hic ex ducimus nemo! Minus enim nostrum numquam vero natus earum, est qui.</p>
+            </div>
+            <div class="box">
+                <h3>Location</h3>
+                <a href="#">India</a>
+                <a href="#">China</a>
+                <a href="#">UK</a>
+                <a href="#">US</a>
+                <a href="#">Canada</a>
+            </div>
+            <div class="box">
+                <h3>Quick navigation to section</h3>
+                <a href="#">Home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow us on</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
